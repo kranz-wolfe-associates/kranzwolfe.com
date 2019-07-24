@@ -1,9 +1,10 @@
-language:      node_js
+language:node_js
 git:
-  depth:       3
+  depth:3
 node_js:
   - "node"
-install:       npm install
+dist: trusty
+install:npm install
 script:
   - npm test
   - gulp
@@ -13,8 +14,6 @@ cache:
 notifications:
   email:       false
 deploy:
-  edge:
-    branch: v1.8.47
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
