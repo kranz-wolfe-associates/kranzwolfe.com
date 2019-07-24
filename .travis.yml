@@ -1,18 +1,24 @@
-language:node_js
+language: node_js
 git:
-  depth:3
+  depth: 3
 node_js:
-  - "node"
+  - node
 dist: trusty
-install:npm install
-script:
-  - npm test
-  - gulp
+sudo: false
+install: npm install
+
 cache:
   directories:
     - node_modules
+
+script:
+  - npm test
+  - gulp
+  - cp index.html 404.html
+
 notifications:
   email:       false
+
 deploy:
   provider: pages
   skip_cleanup: true
