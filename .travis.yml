@@ -1,0 +1,28 @@
+language: node_js
+git:
+  depth: 3
+node_js:
+  - node
+dist: trusty
+sudo: false
+install: npm install
+
+cache:
+  directories:
+    - node_modules
+
+script:
+  - npm test
+  - gulp
+  - cp index.html 404.html
+
+notifications:
+  email:       false
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
