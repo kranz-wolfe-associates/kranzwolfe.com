@@ -14,8 +14,8 @@ notifications:
   email:       false
 deploy:
   edge:
-	branch: v1.8.47
-	provider: pages
+    branch: v1.8.47
+    provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
