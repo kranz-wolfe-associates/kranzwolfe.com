@@ -10755,3 +10755,16 @@ header.masthead h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
+
+footer#contact {
+  background: -webkit-gradient(linear, left top, left bottom, from(#16222C), to(#16222C));
+  background: linear-gradient(to bottom, #16222C 0%, #16222C 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+footer#contact #contactinformation {
+  color: #A69766;
+}
