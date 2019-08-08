@@ -31,7 +31,7 @@ function browserSync(done) {
     server: {
       baseDir: "./dist/"
     },
-    port: 3000
+    port: 3000,
   });
   done();
 }
@@ -136,9 +136,8 @@ function js() {
 function watchFiles() {
   gulp.watch("./scss/**/*", css);
   gulp.watch(["./js/**/*", "!./js/**/*.min.js", "!./dist/**"], js);
-  gulp.watch(["./**/*.html", "!./node_modules/**", "!./dist/**"], html);
+  gulp.watch(["./**/*.html", "!./node_modules/**", "!./dist/**"], gulp.series(html, browserSyncReload));
   gulp.watch("./img/**/*", img);
-  gulp.watch("./dist/**/*.html", browserSyncReload);
 }
 
 // Define complex tasks
