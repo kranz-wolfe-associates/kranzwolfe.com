@@ -1,6 +1,6 @@
 # kranz-wolfe-associates.github.io
 
-This repository containts the sourcecode of the [homepage](https://kranz-wolfe-associates.github.io/kranzwolfe.com/) for the Kranz Wolfe Associates.
+This repository contains the sourcecode of the [homepage](https://kranz-wolfe-associates.github.io/kranzwolfe.com/) for the Kranz Wolfe Associates.
 
 ## Requirements for Developing
 
