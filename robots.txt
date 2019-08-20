@@ -1,11 +1,5 @@
 User-agent: * 
 Disallow: /css/
-
-User-agent: * 
 Disallow: /img/
-
-User-agent: * 
 Disallow: /js/
-
-User-agent: * 
 Disallow: /vendor/
