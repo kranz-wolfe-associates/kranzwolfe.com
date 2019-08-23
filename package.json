@@ -4,7 +4,7 @@
   "version": "5.1.7",
   "scripts": {
     "start": "node_modules/.bin/gulp watch",
-    "test": "htmllint index.html"
+    "test": "htmllint index.html && bootlint index.html"
   },
   "description": "Creative is a stylish one page HTML theme for Bootstrap.",
   "keywords": [
@@ -39,6 +39,7 @@
     "lodash.template": ">=4.5.0"
   },
   "devDependencies": {
+    "bootlint": "^0.16.6",
     "browser-sync": "2.26.7",
     "del": "4.1.1",
     "gulp": "4.0.2",
@@ -51,6 +52,7 @@
     "gulp-uglify": "3.0.2",
     "htmllint": "^0.8.0",
     "htmllint-cli": "0.0.7",
+    "i": "^0.3.6",
     "lodash.template": ">=4.5.0",
     "merge-stream": "2.0.0",
     "popper.js": "^1.14.7"
