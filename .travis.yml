@@ -15,6 +15,7 @@ script:
   - npm test
   - gulp
   - cp index.html 404.html
+  - echo $DEPLOY_CNAME > dist/CNAME
 
 notifications:
   email:       false
