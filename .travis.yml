@@ -14,7 +14,7 @@ cache:
 script:
   - npm test
   - gulp
-  - cp index.html 404.html
+  - cp index.html dist/404.html
   - echo $DEPLOY_CNAME > dist/CNAME
 
 notifications:
