@@ -77,6 +77,7 @@ function html() {
   return gulp
     .src([
       "./**/*.html",
+      "./**/robots.txt",
       "!./node_modules/**"])
     .pipe(gulp.dest('./dist'));
 }
@@ -136,7 +137,7 @@ function js() {
 function watchFiles() {
   gulp.watch("./scss/**/*", css);
   gulp.watch(["./js/**/*", "!./js/**/*.min.js", "!./dist/**"], js);
-  gulp.watch(["./**/*.html", "!./node_modules/**", "!./dist/**"], gulp.series(html, browserSyncReload));
+  gulp.watch(["./**/*.html", "./**/robots.txt", "!./node_modules/**", "!./dist/**"], gulp.series(html, browserSyncReload));
   gulp.watch("./img/**/*", img);
 }
 
